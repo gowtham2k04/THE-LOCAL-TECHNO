@@ -1,0 +1,113 @@
+/* sample project section*/
+.sample-projects {
+    
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.project-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.project-row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    flex: 1 1 45%;
+    max-width: 600px;
+    height: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+
+/* pro buton */
+.project-footer-button {
+    display: flex;
+    justify-content: flex-end; /* align right */
+    padding-right: 5%;
+    margin-bottom:90px;
+}
+
+.view-more-btn {
+    background: linear-gradient(90deg,  #0f0f0f, #2e2e30);
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(21, 33, 34, 0.4);
+    transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* On smaller screens, center the button */
+@media (max-width: 768px) {
+    .project-footer-button {
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-box {
+        flex: 1 1 100%;
+        height: 250px;
+    }
+
+    .project-box.full-width {
+        height: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-box {
+        height: 200px;
+    }
+
+    .project-box.full-width {
+        height: 220px;
+    }
+
+    .project-box .overlay h3 {
+        font-size: 16px;
+    }
+}
