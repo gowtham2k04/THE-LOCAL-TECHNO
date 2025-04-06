@@ -1,0 +1,160 @@
+/* Sample Projects Section with Full Background */
+.sample-projects {
+    
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    padding: 80px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Subtle Pattern or Gradient Background */
+.sample-projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.sample-projects > * {
+    position: relative;
+    z-index: 1;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    align-items: center;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    flex: 1 1 calc(50% - 30px);
+    max-width: 600px;
+    height: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    background: white;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.05);
+}
+
+/* Project Button */
+.project-footer-button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    margin: 60px auto 90px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.view-more-btn {
+    background: linear-gradient(90deg, #0f0f0f, #2e2e30);
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(21, 33, 34, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(21, 33, 34, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-box {
+        flex: 1 1 calc(50% - 30px);
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sample-projects {
+        padding: 50px 15px;
+    }
+
+    .project-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        flex: 1 1 100%;
+        height: 250px;
+        max-width: 100%;
+    }
+
+    .project-footer-button {
+        justify-content: center;
+        padding-right: 0;
+        margin: 40px auto 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sample-projects {
+        padding: 40px 10px;
+    }
+
+    .project-box {
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .view-more-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
