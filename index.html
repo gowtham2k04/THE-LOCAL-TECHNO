@@ -1,322 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Local Techno - Main Page</title>
-    <link rel="website icon" type="png/jpg" href="assets/TLT LOGO (2).png">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Local Techno – Web Development, Apps & Digital Solutions</title>
 
+  <!-- SEO -->
+  <meta name="description" content="The Local Techno is a digital solutions company in Erode, Tamil Nadu. We specialize in web development, app development, UI/UX design, AI solutions, hosting and IT services for businesses and students.">
+  <meta name="keywords" content="The Local Techno, web development Bhavani,Erode,Chennai app development Tamil Nadu, AI solutions, UI/UX design, hosting services, IT company India">
+  <meta name="author" content="The Local Techno">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Local Techno – Web Development, Apps & Digital Solutions">
+  <meta property="og:description" content="Your trusted tech partner for websites, mobile apps, AI solutions, and IT services. Based in Tamil Nadu, India.">
+  <meta property="og:image" content="assets/tlt home.png">
+  <meta property="og:url" content="https://thelocaltechno.github.io/The-Local-Techno/">
+  <meta property="og:type" content="website">
+
+  <link rel="website icon" type="png/jpg" href="assets/TLT LOGO (2).png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
  
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo" style="color: white;">The Local Techno</h2>
-            <div class="menu-toggle" id="mobile-menu">☰</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#why-choose-us">US</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo" style="color: white;">The Local Techno</h2>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#why-choose-us">Why Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="content">
-            <h1 class="h1">Innovative Solutions for the Tech World</h1>
-            <p class="p">Your one-stop tech partner to elevate your business.</p>
-            <button class="btn" onclick="scrollToContact()">Get Started</button>
-        </div>
-        <div class="image-container">
-            <img src="assets/tlt home.png" class="home-image" alt="Tech Solutions">
-        </div>
-    </section>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="content">
+      <h1 class="h1">Simple & Smart Digital Solutions</h1>
+      <p class="p">We build websites, apps, and tools that make technology easier for your business.</p>
+      <button class="btn" onclick="scrollToContact()">Get Started</button>
+    </div>
+    <div class="image-container">
+      <img src="assets/tlt home.png" class="home-image" alt="The Local Techno – Digital Solutions">
+    </div>
+  </section>
 
-
-      <!-- chat bot-->    
-          <!-- Chat Icon (Floating in Bottom Right) -->
-          <div class="chat-icon" onclick="toggleChat()">
-              💬
-          </div>
-      
-          <!-- Chatbot Container -->
-          <div class="chatbot-container" id="chatbot">
-              <div class="chat-header">
-                  Local Techno AI Chatbot
-                  <span class="close-chat" onclick="toggleChat()">✖</span>
-              </div>
-              <div class="chat-body" id="chatBody">
-                  <div class="bot-message">👋 Hi! Ask me anything about The Local Techno.</div>
-              </div>
-              <div class="chat-input">
-                  <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
-                  <button onclick="sendMessage()">Send</button>
-              </div>
-          </div>
-      
-      
-
+  <!-- Chatbot -->
+  <div class="chat-icon" onclick="toggleChat()">💬</div>
+  <div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+      Local Techno Chat
+      <span class="close-chat" onclick="toggleChat()">✖</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="bot-message">👋 Hi! Ask us anything about our services.</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
 
   <!-- About Section -->
   <section id="about" class="section">    
     <div class="about-container">
-        <div class="about-content">
-            <h1>About Us</h1>
-            <p>
-                <b>The Local Techno</b> is a leading provider of innovative digital solutions, specializing in web development, AI-powered tools, and next-gen technology services. 
-                Our mission is to empower businesses with state-of-the-art digital solutions, ensuring seamless growth in a fast-evolving tech landscape.
-            </p>
-            <p>
-                Founded by a team of tech enthusiasts, developers, and creative strategists, we believe in bridging the gap between businesses and digital transformation. 
-                Whether you need a robust website, an intelligent AI assistant, or a custom software solution, we bring expertise and innovation to every project.
-            </p>
-            <p>
-                We focus on **customization, efficiency, and excellence**, ensuring each solution is tailored to our clients' specific needs. Our team works with cutting-edge technologies to deliver scalable, high-performance digital products.
-            </p>
-        </div>
-
-        <!-- Mission & Vision Cards -->
-        <div class="main-card mission-card" onclick="openSubCards('mission')">Our Mission ⬇️</div>
-        <div class="main-card vision-card" onclick="openSubCards('vision')">Our Vision ⬇️</div>
-    </div>
-</section>
-
-<!-- Overlay to Close -->
-<div class="overlay" onclick="closeSubCards()"></div>
-
-<!-- Sub Cards Popup -->
-<div class="sub-cards-container" id="subCards">
-    <!-- Mission Cards -->
-    <div class="sub-cards" id="missionSubCards">
-        <div class="sub-card"><h3>Web Development</h3><p>We design and develop responsive, high-performance websites that help businesses grow online.</p></div>
-        <div class="sub-card"><h3>App Development</h3><p>Building powerful mobile apps tailored to user needs, ensuring a seamless experience across platforms.</p></div>
-        <div class="sub-card"><h3>UI/UX Design</h3><p>Creating visually stunning and user-friendly designs that enhance engagement and satisfaction.</p></div>
-        <div class="sub-card"><h3>AI Solutions</h3><p>Leveraging artificial intelligence to automate and optimize business processes for better efficiency.</p></div>
-    </div>
-
-    <!-- Vision Cards -->
-    <div class="sub-cards" id="visionSubCards">
-        <div class="sub-card"><h3>Customer Service</h3><p>Providing outstanding support to ensure a smooth user experience for all our clients.</p></div>
-        <div class="sub-card"><h3>Hosting & Security</h3><p>Reliable, secure hosting services with advanced cybersecurity measures to keep your data safe.</p></div>
-        <div class="sub-card"><h3>Business Growth</h3><p>Helping businesses expand their digital presence and reach new customers with innovative solutions.</p></div>
-        <div class="sub-card"><h3>Technology Innovation</h3><p>Continuously innovating and adopting the latest trends to provide cutting-edge solutions.</p></div>
-    </div>
-</div>
-
-<!--why choose us-->
-</section>
-<section id="why-choose-us" class="section">
-    <div class="why-container">
-        <h1 class="section-title">Why Choose Us?</h1>
-        <p class="section-description">
-            We bring innovation, efficiency, and creativity to every project, ensuring top-quality results for our clients.
+      <div class="about-content">
+        <h1>About Us</h1>
+        <p>
+          <b>The Local Techno</b> is based in Erode, Tamil Nadu. We help businesses and students with modern websites, mobile apps, creative design, and smart technology solutions.
         </p>
+        <p>
+          Our team includes developers and designers who love solving problems with technology. Whether it’s building an e-commerce site, a mobile app, or adding AI to your business, we focus on making things simple and effective.
+        </p>
+        <p>
+          We believe in <b>custom work, efficiency, and quality</b>—so every project is designed for real people, not just machines.
+        </p>
+      </div>
 
-        <div class="why-grid">
-            <div class="why-card">
-                <img src="assets/us/customer-review.png" alt="Experience">
-                <h3 class="why h3">Years of Experience</h3>
-                <p class="p">With extensive industry experience, we craft digital solutions that stand out.</p>
-            </div>
-
-            <div class="why-card">
-                <img src="assets/us/24-7.png" alt="24/7 Support">
-                <h3>24/7 Support</h3>
-                <p>We provide round-the-clock support to ensure seamless business operations.</p>
-            </div>
-
-            <div class="why-card">
-                <img src="assets/us/solution.png" alt="Customization">
-                <h3>Customized Solutions</h3>
-                <p>Tailor-made solutions designed specifically to meet your business needs.</p>
-            </div>
-        </div>
+      <!-- Mission & Vision -->
+      <div class="main-card mission-card" onclick="openSubCards('mission')">Our Mission ⬇️</div>
+      <div class="main-card vision-card" onclick="openSubCards('vision')">Our Vision ⬇️</div>
     </div>
-</section>
-<script src="js/why.js"></script>
+  </section>
 
-<!-- Sample Projects Section -->
-<section id="projects" class="section sample-projects">
-    <h1 class="section-title">Demo Projects</h1>
-    <p class="section-description">Explore some of our recent works that showcase creativity and innovation.</p>
-  
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeSubCards()"></div>
+
+  <!-- Sub Cards -->
+  <div class="sub-cards-container" id="subCards">
+    <div class="sub-cards" id="missionSubCards">
+      <div class="sub-card"><h3>Web Development</h3><p>We create responsive, user-friendly websites for business growth.</p></div>
+      <div class="sub-card"><h3>App Development</h3><p>Mobile apps that give customers a smooth, reliable experience.</p></div>
+      <div class="sub-card"><h3>UI/UX Design</h3><p>Clear, modern design that makes technology easy to use.</p></div>
+      <div class="sub-card"><h3>AI Solutions</h3><p>Smart tools that save time and improve business efficiency.</p></div>
+    </div>
+    <div class="sub-cards" id="visionSubCards">
+      <div class="sub-card"><h3>Customer Support</h3><p>Friendly, reliable help when you need it most.</p></div>
+      <div class="sub-card"><h3>Hosting & Security</h3><p>Fast and secure hosting with strong data protection.</p></div>
+      <div class="sub-card"><h3>Business Growth</h3><p>Helping local businesses reach more people online.</p></div>
+      <div class="sub-card"><h3>Innovation</h3><p>We stay updated so you always get modern solutions.</p></div>
+    </div>
+  </div>
+
+  <!-- Why Choose Us -->
+  <section id="why-choose-us" class="section">
+    <div class="why-container">
+      <h1 class="section-title">Why Choose Us?</h1>
+      <p class="section-description">
+        We focus on clear communication, practical solutions, and dependable support.
+      </p>
+      <div class="why-grid">
+        <div class="why-card">
+          <img src="assets/us/customer-review.png" alt="Experience">
+          <h3>Years of Experience</h3>
+          <p>We bring industry experience and local knowledge to every project.</p>
+        </div>
+        <div class="why-card">
+          <img src="assets/us/24-7.png" alt="24/7 Support">
+          <h3>24/7 Support</h3>
+          <p>We’re here whenever you need help with your project or service.</p>
+        </div>
+        <div class="why-card">
+          <img src="assets/us/solution.png" alt="Customization">
+          <h3>Tailored Solutions</h3>
+          <p>Every project is designed to meet your specific goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/why.js"></script>
+
+  <!-- Projects -->
+  <section id="projects" class="section sample-projects">
+    <h1 class="section-title">Sample Projects</h1>
+    <p class="section-description">A look at some of the work we’ve done recently.</p>
     <div class="project-wrapper">
-      <!-- Top Two Images -->
       <div class="project-row">
-        <a href="https://gowtham2k04.github.io/aeroshop/" class="project-box" target="_blank">
-          <img src="assets/pro img/aero shop .jpg" alt="Project 1">
+        <a href="https://thelocaltechno.github.io/E-COMMERCES/" class="project-box" target="_blank">
+          <img src="assets/pro img/aero shop .jpg" alt="E-commerce Project">
           <div class="overlay"><h3>Project One</h3></div>
         </a>
-        <a href="https://gowtham2k04.github.io/dreamerhomecreation/" class="project-box" target="_blank">
-          <img src="assets/pro img/second project.jpg" alt="Project 2">
+        <a href="https://thelocaltechno.github.io/dreamerhomecreation/" class="project-box" target="_blank">
+          <img src="assets/pro img/second project.jpg" alt="Creative Project">
           <div class="overlay"><h3>Project Two</h3></div>
         </a>
       </div>
-  
-      <!-- Bottom One Image -->
-      <a href="https://gowtham2k04.github.io/Restoran-Restaurant/" class="project-box full-width" target="_blank">
-        <img src="assets/pro img/food 3.jpg" alt="Project 3">
+      <a href="https://thelocaltechno.github.io/Restoran-Restaurant/" class="project-box full-width" target="_blank">
+        <img src="assets/pro img/food 3.jpg" alt="Restaurant Website">
         <div class="overlay"><h3>Project Three</h3></div>
       </a>
     </div>
-  <!-- Button below projects aligned to right -->
-  <div class="project-footer-button">
-    <a href="pages/project.html" class="view-more-btn">View More Project</a>
-</div>
-
+    <div class="project-footer-button">
+      <a href="pages/project.html" class="view-more-btn">View More Projects</a>
+    </div>
   </section>
-  
 
-
-
-<!-- Services Section -->
-
-<section id="services" class="section">
+  <!-- Services -->
+  <section id="services" class="section">
     <div class="services-container">
-        <h1 class="section-title">Our Services</h1>
-        <p class="section-description">
-           At <b>The Local Techno</b>, we offer a range of cutting-edge technology solutions to help businesses thrive in the digital world.
-        </p>
-
-        <div class="services-grid">
-            <!-- Row 1 -->
-            <div class="service-card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        
-                        <img src="assets/service img/software.png" alt="Web Development">
-                        <h3>Web Development</h3>
-                    </div>
-                    <div class="card-back">
-                        <p>We create stunning, responsive, and high-performance websites tailored to your business needs.</p>
-                    </div>
-                </div>
+      <h1 class="section-title">Our Services</h1>
+      <p class="section-description">We provide a mix of creative and technical services for businesses and individuals.</p>
+      <div class="services-grid">
+        <div class="service-card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/service img/software.png" alt="Web Development">
+              <h3>Web Development</h3>
             </div>
-
-            <div class="service-card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="assets/service img/app-development.png" alt="App Development">
-                        <h3>App Development</h3>
-                    </div>
-                    <div class="card-back">
-                        <p>Developing user-friendly mobile and web apps for iOS, Android, and cross-platform solutions.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="assets/service img/ux.png" alt="UI/UX Design">
-                        <h3>UI/UX Design</h3>
-                    </div>
-                    <div class="card-back">
-                        <p>Creating engaging, visually appealing, and easy-to-use digital experiences for your audience.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="service-card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="assets/service img/microchip.png" alt="AI Solutions">
-                        <h3>AI-Powered Solutions</h3>
-                    </div>
-                    <div class="card-back">
-                        <p>Utilizing AI and automation to streamline operations and optimize business performance.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card" onclick="flipCard(this)">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img src="assets/service img/setting.png" alt="Hosting Services">
-                        <h3>Hosting & Security</h3>
-                    </div>
-                    <div class="card-back">
-                        <p>Providing secure, scalable, and high-speed hosting solutions with top-tier security features.</p>
-                    </div>
-                </div>
-            </div>
-
-           
-            
-         <!-- Button to Navigate to services.html -->
-         <button class="view-services-btn" onclick="window.location.href='pages/services.html'">View More Services ➜</button>
-
-    </div>
-    </div>
-</div>
+            <div class="card-back"><p>We build responsive websites that look good on any device.</p></div>
+          </div>
         </div>
+        <div class="service-card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/service img/app-development.png" alt="App Development">
+              <h3>App Development</h3>
+            </div>
+            <div class="card-back"><p>Custom apps for Android and iOS built for your needs.</p></div>
+          </div>
+        </div>
+        <div class="service-card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/service img/ux.png" alt="UI/UX Design">
+              <h3>UI/UX Design</h3>
+            </div>
+            <div class="card-back"><p>Clean designs that make technology easy to use.</p></div>
+          </div>
+        </div>
+        <div class="service-card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/service img/microchip.png" alt="AI Solutions">
+              <h3>AI Tools</h3>
+            </div>
+            <div class="card-back"><p>We add smart tools that automate tasks and save time.</p></div>
+          </div>
+        </div>
+        <div class="service-card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/service img/setting.png" alt="Hosting & Security">
+              <h3>Hosting & Security</h3>
+            </div>
+            <div class="card-back"><p>Fast, secure hosting with reliable protection for your data.</p></div>
+          </div>
+        </div>
+        <button class="view-services-btn" onclick="window.location.href='pages/services.html'">View More Services ➜</button>
+      </div>
     </div>
-</section>
+  </section>
 
-    <!-- Footer Section -->
-     <section>
-        <footer>
-            <div class="footer-container" id="contact">
-                <!-- Footer Logo -->
-                <div class="footer-logo">
-                    <img src="./assets/tlt home.png" alt="The Local Techno Logo">
-                    <p>Your trusted tech partner for innovation & growth.</p>
-                </div>
-        
-                <!-- Quick Links -->
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./pages/services.html">Services</a></li>
-                        <li><a href="./pages/faq.html">FAQ</a></li>
-                    </ul>
-                </div>
-                <!-- Contact Details -->
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-phone"></i> (+91) 6384410897</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:thelocaltechno@gmail.com">thelocaltechno@gmail.com</a></p>
-                </div>
-        <!-- Visit To -->
-<div class="footer-visit">
-    <h3>Visit To</h3>
-    <p>
-        <a href="https://www.google.com/maps/place/Vasavi+College+backside,+RTP+Stop,+Erode,+Tamil+Nadu+638005,+India" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           style="color: #ccc; text-decoration: none; transition: color 0.3s;">
-            Vasavi College backside, RTP Stop, Erode 638005, Tamil Nadu, India
-        </a>
-    </p>
-</div>
-
-                <!-- Social Media -->
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <a href="https://www.instagram.com/thelocaltechno_tlt/?igsh=MXVkN3dtejM4OG81NA%3D%3D#"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="https://x.com/tlt_technolocal"><i class="fab fa-twitter"></i> X</a>
-                </div>
-            </div>
-        
-            <!-- Copyright Section -->
-            <div class="footer-bottom">
-                <p>© <span id="year"></span> The Local Techno. All rights reserved.</p>
-                <p>Designed & Developed by <a href="https://thelocaltechno.com" target="_blank">The Local Techno</a></p>
-            </div>
-        </footer>
-        
-   </section>
-
-
-
+  <!-- Footer -->
+  <section>
+    <footer>
+      <div class="footer-container" id="contact">
+        <div class="footer-logo">
+          <img src="./assets/tlt home.png" alt="The Local Techno Logo">
+          <p>Your trusted local partner for web, apps & digital growth.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone"></i> (+91) 6384410897</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:thelocaltechno@gmail.com">thelocaltechno@gmail.com</a></p>
+        </div>
+        <div class="footer-visit">
+          <h3>Visit Us</h3>
+          <p>
+            <a href="https://www.google.com/maps/place/Vasavi+College+backside,+RTP+Stop,+Erode,+Tamil+Nadu+638005,+India" target="_blank" rel="noopener noreferrer" style="color: #ccc; text-decoration: none;">
+              Vasavi College backside, RTP Stop, Erode 638005, Tamil Nadu, India
+            </a>
+          </p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/thelocaltechno_tlt/"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://x.com/tlt_technolocal"><i class="fab fa-twitter"></i> X</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> The Local Techno. All rights reserved.</p>
+        <p>Designed & Developed by <a href="https://thelocaltechno.com" target="_blank">The Local Techno</a></p>
+      </div>
+    </footer>    
+  </section>
 
 </body>
 <script defer src="./assets/js/script.js"></script>
